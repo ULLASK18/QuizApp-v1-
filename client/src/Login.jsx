@@ -66,7 +66,7 @@ export default function Signup() {
             <p className="mt-3 Already-acc">Create New Account</p>
           </div>
           <div className="mt-3 text-center">
-          <Link to="/" className="btn btn-primary w-50">
+          <Link to="/register" className="btn btn-primary w-50">
             Signup
           </Link>
         </div>
