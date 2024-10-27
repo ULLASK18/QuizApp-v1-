@@ -13,7 +13,7 @@ app.use(express.json());
 
 const corsOptions = {
   origin: ['https://quiz-app-v1-frontend.vercel.app'],
-  methods: ["GET", "POST"],
+  methods: ["POST", "GET"],
   credentials: true,
 };
 app.use(cors(corsOptions));
