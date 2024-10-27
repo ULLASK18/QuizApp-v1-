@@ -57,7 +57,7 @@ export default function SurveyHome() {
   const submitScore = (score) => {
     const email = "user@example.com";
 
-    axios.post('http://localhost:5000/save-score', { email, score })
+    axios.post('http://localhost:5000/score', { email, score })
       .then((result) => {
         console.log('Score saved successfully:', result.data);
       })
