@@ -7,9 +7,7 @@ const EmployeeModel = require("./models/user");
 
 const app = express();
 const port = process.env.PORT || 5000;
-const uri =
-  process.env.MONGODB_URI ||
-  "mongodb+srv://Ullas:Ullas1234@cluster0.6ho9i.mongodb.net/employee";
+const uri = "mongodb+srv://Ullas:Ullas1234@cluster0.6ho9i.mongodb.net/employee?retryWrites=true&w=majority&appName=Cluster0";
 
 app.use(express.json());
 
@@ -20,13 +18,12 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(uri)
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => {
     console.error("MongoDB connection error:", err);
-    process.exit(1);  // Exit the application if connection fails
+    process.exit(1);  
   });
-
 
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
