@@ -14,7 +14,7 @@ axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://quiz-app-v1-backend.vercel.app/register", { name, email, password })
+      .post("https://quiz-app-v1-backend.vercel.app/", { name, email, password })
       .then((result) => {
         console.log(result);
         navigate("/login");
