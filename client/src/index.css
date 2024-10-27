@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Monoton&family=Open+Sans:wght@400;700&family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Work+Sans:wght@400;700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+}
+.sub-img {
+    height: 50%;
+    width: 100%;
+}
+
+.bg-background{
+  margin-left: 10rem;
+}
+
+.container{
+  margin-top: -5rem;
+}
+
+.form-control {
+    font-family: "Roboto";
+    font-size: 36px;
+    width: 100%;
+    height: 3rem;
+}
+
+.error-message {
+    color: red;
+    font-family: "Roboto";
+}
+
+.signup-form{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10rem;
+  /* background-color: rgb(1, 95, 64); */
+  width: 30rem;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.htmlForm-control{
+  border-radius: .3rem;
+  border: none;
+  width: 100%;
+  padding: .3rem;
+  cursor: pointer;
+}
+
+.lable-name{
+  color: white;
+}
+
+.register-btn{
+  width: 10rem;
+  /* background-color: rgb(255, 255, 255); */
+}
+
+.Already-acc{
+  color: rgb(0, 0, 0);
+  font-size: .8rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-right: -1rem;
+}
+
+.login-btn{
+  width: 10rem;
+}
+
+.login1-btn{
+  width: 10rem;
+  margin-top: -3rem;
+}
+
+.signup-btn{
+  width: 10rem;
+  margin-top: -3rem;
+}
