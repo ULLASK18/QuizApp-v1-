@@ -25,6 +25,10 @@ mongoose.connect(uri)
     process.exit(1);  
   });
 
+app.get("/",(req,res)=>{
+    res.json("Hello");
+})
+
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
   EmployeeModel.findOne({ email })
