@@ -12,11 +12,9 @@ const uri = "mongodb+srv://Ullas:Ullas1234@cluster0.6ho9i.mongodb.net/employee?r
 app.use(express.json());
 
 app.use(cors({
-  origin: ['https://quiz-app-v1-frontend.vercel.app'], 
-  methods: ['GET', 'POST'], 
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true, 
+  origin: 'https://quiz-app-v1-frontend.vercel.app'
 }));
+
 
 mongoose.connect(uri)
   .then(() => console.log("Connected to MongoDB"))
