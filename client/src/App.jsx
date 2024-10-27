@@ -13,7 +13,7 @@ function App() {
     <div className="bg-background">
       <BrowserRouter>
         <Routes>
-          <Route path="/register" element={<Signup/>}/>
+          <Route path="/" element={<Signup/>}/>
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<SurveyHome />} />
           <Route path="/result" element={<Result />} />
