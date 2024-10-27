@@ -12,7 +12,7 @@ const uri = "mongodb+srv://Ullas:Ullas1234@cluster0.6ho9i.mongodb.net/employee?r
 app.use(express.json());
 
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || "http://localhost:5173",
+  origin: ['https://quiz-app-v1-frontend.vercel.app'],
   methods: ["GET", "POST"],
   credentials: true,
 };
