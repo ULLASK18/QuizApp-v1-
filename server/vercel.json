@@ -4,7 +4,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/index.js"  // Specify the main entry file for API routes
+      "dest": "/api/index.js" 
     }
   ]
 }
