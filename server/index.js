@@ -11,7 +11,10 @@ const app = express();
 app.use(express.json());
 
 app.use(cors());
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ 
+  origin: ["https://quiz-app-v1-qzlp.vercel.app"],
+  methods: ["GET" , "POST"],
+}));
 
 
 mongoose.connect("mongodb://localhost:27017/employee");
