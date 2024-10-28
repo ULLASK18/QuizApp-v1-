@@ -10,11 +10,11 @@ export default function Signup() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const navigate = useNavigate();
-axios.defaults.withCredentials = true;
+
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://quiz-app-v1-backend.vercel.app/register", { name, email, password })
+      .post("http://localhost:5000/register", { name, email, password })
       .then((result) => {
         console.log(result);
         navigate("/login");
