@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors({
   allowedHeader:"*",
   allowMethods:"*",
-  origin:"*:,
+  origin:"https://quiz-app-v1-frontend.vercel.app",
 }));
 
 mongoose.connect(uri)
