@@ -3,18 +3,21 @@
 const mongoose = require("mongoose");
 const express = require("express");
 const cors = require("cors");
+require('dotenv').config();
 
 const EmployeeModel = require("./models/user");
 
 const app = express();
+const uri = process.env.MONGODB_URI ;
 
 app.use(express.json());
 
 app.use(cors());
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: process.env.FRONTEND_URL}));
 
 
-mongoose.connect("mongodb://localhost:27017/employee");
+mongoose.connect(uri);
+
 
 app.post("/login", (req, res) => {
   const { email, password } = req.body;

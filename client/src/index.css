@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Monoton&family=Open+Sans:wght@400;700&family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Work+Sans:wght@400;700&display=swap");
-
+/*
 *{
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ body{
   justify-content: center;
   margin: auto;
   margin-top: 10rem;
-  /* background-color: rgb(1, 95, 64); */
+  background-color: rgb(1, 95, 64); 
   width: 30rem;
   flex-direction: column;
   border-radius: 1rem;
@@ -58,7 +58,7 @@ body{
 
 .register-btn{
   width: 10rem;
-  /* background-color: rgb(255, 255, 255); */
+ background-color: rgb(255, 255, 255); 
 }
 
 .Already-acc{
@@ -82,3 +82,4 @@ body{
   width: 10rem;
   margin-top: -3rem;
 }
+*/
